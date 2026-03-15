@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tv generator-info-name="E999 today-only XMLTV generator" source-info-name="E999 (today-only from ECDF official guide)" source-info-url="https://elcanaldelfutbol.com/envivo/" date="20260315142146 -0500">
+  <channel id="e999.ec">
+    <display-name lang="es">E999</display-name>
+    <display-name lang="es">ECDF</display-name>
+    <display-name lang="es">El Canal del Fútbol</display-name>
+  </channel>
+  <programme channel="e999.ec" start="20260315133000 -0500" stop="20260315160000 -0500">
+    <title lang="es">BRASILEIRAO: SANTOS VS CORINTHIANS</title>
+    <desc lang="es">Programación de hoy obtenida de la guía oficial de ECDF. Los horarios se emiten en hora de Ecuador (-05:00).</desc>
+    <category lang="es">Deportes</category>
+    <category lang="es">Fútbol</category>
+  </programme>
+  <programme channel="e999.ec" start="20260315160000 -0500" stop="20260315183000 -0500">
+    <title lang="es">BRASILEIRAO: PALMEIRAS VS MIRASSOL</title>
+    <desc lang="es">Programación de hoy obtenida de la guía oficial de ECDF. Los horarios se emiten en hora de Ecuador (-05:00).</desc>
+    <category lang="es">Deportes</category>
+    <category lang="es">Fútbol</category>
+  </programme>
+  <programme channel="e999.ec" start="20260315183000 -0500" stop="20260315190000 -0500">
+    <title lang="es">RESUMEN COPA DEL REY (REPRISE)</title>
+    <desc lang="es">Programación de hoy obtenida de la guía oficial de ECDF. Los horarios se emiten en hora de Ecuador (-05:00).</desc>
+    <category lang="es">Deportes</category>
+    <category lang="es">Repetición</category>
+    <category lang="es">Fútbol</category>
+  </programme>
+  <programme channel="e999.ec" start="20260315190000 -0500" stop="20260315193000 -0500">
+    <title lang="es">RESUMEN ELIMINATORIAS FECHA 18 (REPRISE)</title>
+    <desc lang="es">Programación de hoy obtenida de la guía oficial de ECDF. Los horarios se emiten en hora de Ecuador (-05:00).</desc>
+    <category lang="es">Deportes</category>
+    <category lang="es">Repetición</category>
+  </programme>
+  <programme channel="e999.ec" start="20260315193000 -0500" stop="20260315200000 -0500">
+    <title lang="es">RESUMEN COPA DEL REY (REPRISE)</title>
+    <desc lang="es">Programación de hoy obtenida de la guía oficial de ECDF. Los horarios se emiten en hora de Ecuador (-05:00).</desc>
+    <category lang="es">Deportes</category>
+    <category lang="es">Repetición</category>
+    <category lang="es">Fútbol</category>
+  </programme>
+  <programme channel="e999.ec" start="20260315200000 -0500" stop="20260315210000 -0500">
+    <title lang="es">LÍNEA DE 3</title>
+    <desc lang="es">Programación de hoy obtenida de la guía oficial de ECDF. Los horarios se emiten en hora de Ecuador (-05:00).</desc>
+    <category lang="es">Deportes</category>
+    <category lang="es">Programa</category>
+  </programme>
+  <programme channel="e999.ec" start="20260315210000 -0500" stop="20260315230000 -0500">
+    <title lang="es">BRASILEIRAO: SANTOS VS CORINTHIANS (REPRISE)</title>
+    <desc lang="es">Programación de hoy obtenida de la guía oficial de ECDF. Los horarios se emiten en hora de Ecuador (-05:00).</desc>
+    <category lang="es">Deportes</category>
+    <category lang="es">Repetición</category>
+    <category lang="es">Fútbol</category>
+  </programme>
+  <programme channel="e999.ec" start="20260315230000 -0500" stop="20260315233000 -0500">
+    <title lang="es">RESUMEN ELIMINATORIAS FECHA 18 (REPRISE)</title>
+    <desc lang="es">Programación de hoy obtenida de la guía oficial de ECDF. Los horarios se emiten en hora de Ecuador (-05:00).</desc>
+    <category lang="es">Deportes</category>
+    <category lang="es">Repetición</category>
+  </programme>
+</tv>
