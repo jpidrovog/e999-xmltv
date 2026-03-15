@@ -1,9 +1,9 @@
 # E999 XMLTV
 
-E999 is a today-only XMLTV feed for ECDF / El Canal del Fútbol.
+E999 is a today-only XMLTV feed 
 
 Why it is today-only:
-- the official ECDF `envivo` guide exposes today's lineup
+- the official `envivo` guide exposes today's lineup
 - trying to force a 3-day or 7-day feed produced bad guide data
 - this package is designed to publish only today's valid rows with proper start/stop times
 
