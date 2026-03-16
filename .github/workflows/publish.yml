@@ -17,9 +17,14 @@ concurrency:
   group: "pages"
   cancel-in-progress: true
 
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: "true"
+  PYTHONUNBUFFERED: "1"
+
 jobs:
   build:
     runs-on: ubuntu-latest
+    timeout-minutes: 20
 
     steps:
       - name: Check out repository
@@ -33,15 +38,47 @@ jobs:
       - name: Install system dependencies
         run: |
           sudo apt-get update
-          sudo apt-get install -y libnspr4 libnss3 libatk1.0-0 libatk-bridge2.0-0 libcups2 libxkbcommon0 libxcomposite1 libxdamage1 libxfixes3 libxrandr2 libgbm1 libasound2t64
+          sudo apt-get install -y \
+            libnspr4 \
+            libnss3 \
+            libatk1.0-0 \
+            libatk-bridge2.0-0 \
+            libcups2 \
+            libxkbcommon0 \
+            libxcomposite1 \
+            libxdamage1 \
+            libxfixes3 \
+            libxrandr2 \
+            libgbm1 \
+            libasound2t64
 
       - name: Install Python dependencies
         run: |
+          python -m pip install --upgrade pip
           pip install -r requirements.txt
           python -m playwright install chromium
 
       - name: Generate XMLTV and landing page
-        run: python scrape_e999.py --output public/guide.xml --index public/index.html
+        run: |
+          mkdir -p public
+          for attempt in 1 2 3; do
+            echo "Generate attempt ${attempt}/3"
+            if python scrape_e999.py --output public/guide.xml --index public/index.html; then
+              echo "Generation succeeded on attempt ${attempt}"
+              exit 0
+            fi
+            if [ "$attempt" -lt 3 ]; then
+              echo "Generation failed on attempt ${attempt}. Waiting 180 seconds before retry..."
+              sleep 180
+            fi
+          done
+          echo "All 3 generation attempts failed."
+          exit 3
+
+      - name: Verify generated files
+        run: |
+          test -s public/guide.xml
+          test -s public/index.html
 
       - name: Configure Pages
         uses: actions/configure-pages@v5
